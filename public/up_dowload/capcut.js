@@ -1,5 +1,5 @@
 const axios = require('axios');
-exports.name = '/capcut';
+exports.name = '/capcut/download';
 const extractLinks = (text) => {
   const regex = /(https:\/\/www.capcut.com\/t\/[a-zA-Z0-9_-]+)|(https:\/\/www.capcut.com\/template-detail\/[a-zA-Z0-9_-]+)/g;
   const matches = text.match(regex);
