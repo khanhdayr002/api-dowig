@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-exports.name = '/instagram/post';
+exports.name = '/instagram/downloadpost';
 const snapsave = async (url) => {
   try {
     const ig_regex = /((?:https?:\/\/)?(?:www\.)?instagram\.com\/(?:p|reel|reels|tv|stories)\/([^/?#&]+)).*/g;
