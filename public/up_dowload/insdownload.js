@@ -15,9 +15,10 @@ const options = {
   }
 };
 
-try {
-	const response = await axios.request(options);
+axios.request(options).then(function (response) {
 	console.log(response.data);
-} catch (error) {
+  return res.json(response.data)
+}).catch(function (error) {
 	console.error(error);
+});
 }
