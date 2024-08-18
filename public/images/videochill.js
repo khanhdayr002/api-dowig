@@ -1,7 +1,7 @@
 exports.name = '/images/videochill';
 exports.index = async(req, res, next) => {
     try {
-        const girl = require('./data/json/videochill.json');
+        const girl = require('./data/json/videochill.txt');
         var image = girl[Math.floor(Math.random() * girl.length)].trim();
         res.jsonp({
             url: image,
