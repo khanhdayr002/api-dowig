@@ -1,4 +1,4 @@
-exports.name = '/twitter/get';
+exports.name = '/twitter/link=';
 const axios = require('axios')
 const qs = require("qs")
 const cheerio = require('cheerio')
